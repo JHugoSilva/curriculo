@@ -1,0 +1,15 @@
+/**
+*SELECT POST
+*PARA TRABALHAR COM COMPONENTE OPTION
+*MANTER SELECIONADO APOS SELEÇÃO
+*/
+<?php
+function selected_post($value, $post) {
+  if(isset($_POST[$post])){
+    foreach($_POST[$post] as $p) {
+      if($value == $p) {
+        echo 'selected="selected"';
+      }
+    }
+  }
+}
