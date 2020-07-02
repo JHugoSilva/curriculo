@@ -16,10 +16,10 @@ function selected_post($value, $post) {
 }
 
 /*SELECTE VINDO DO BANCO Em componente Multselectd picke*/
-function multSelectd($valor, $compare) {
+function multSelected($valor, $compare) {
     $explode = explode(',', $valor);
     foreach($explode as $info) {
-        if($info == $compore) {
+        if($info == $compare) {
             echo 'selected="selected"';
         }
     }
